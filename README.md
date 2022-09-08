@@ -1,6 +1,25 @@
 ## Create GFS2 HA Cluster in RHEL 9 - Step-by-Step
 This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 9 HA cluster with pacemaker/corosync. This environment is running in a simple KVM host with two VMs being used as the newly created cluster. Adjust the steps according to your own environment.
 
+---
+
+### Recommended Training:
+
+1. [**RH124 - Red Hat System Administration I**](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i)
+2. [**RH134 - Red Hat System Administration II**](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii)
+3. [**RH436 - Red Hat High Availability Clustering**](https://www.redhat.com/en/services/training/rh436-red-hat-high-availability-clustering)
+
+---
+
+### Support/Reference Documents
+
+ 1. **[Configuring GFS2 file systems](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_gfs2_file_systems/index)**
+ 2. **[Configuring and managing high availability clusters](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/index)**
+3. **[Fencing in a Red Hat High Availability Cluster](https://access.redhat.com/solutions/15575)**
+4. **[How to configure fence agent 'fence_xvm' in RHEL cluster](https://access.redhat.com/solutions/917833)**
+
+---
+
 ### Create two similar VMs . Create an empty shareable raw image and attach in both VMs in QEMU/KMV/Libvirt without formatting it
 
 ## Enable repositories
