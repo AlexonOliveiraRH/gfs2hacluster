@@ -35,7 +35,7 @@ This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 
     --enable=satellite-client-6-for-rhel-9-x86_64-rpms
     # dnf update -y
 
-## Create a pacemaker cluster (https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/assembly_creating-high-availability-cluster-configuring-and-managing-high-availability-clusters)
+## Create a pacemaker cluster
 
     # dnf install pcs pacemaker fence-agents-all lvm2-lockd gfs2-utils dlm pcp pcp-pmda-gfs2 pcp-zeroconf -y
     # firewall-cmd --permanent --add-service=high-availability
@@ -48,7 +48,7 @@ This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 
     # pcs cluster setup hacluster --start gfsa.example.local gfsb.example.local
     # pcs cluster enable --all
 
-## Configuring fencing device (https://access.redhat.com/solutions/917833)
+## Configuring fencing device
 ### On KVM host
 
     # yum install fence-virt fence-virtd fence-virtd-libvirt fence-virtd-multicast fence-virtd-serial -y
@@ -73,7 +73,7 @@ This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 
     # pcs stonith create hafence-gfs fence_xvm pcmk_host_map="gfsa.example.local:gfsa gfsb.example.local:gfsb" key_file=/etc/cluster/fence_xvm.key pcmk_delay_max=15 --force
     # pcs stonith show --full
 
-## Configure GFS2 with the pacemaker cluster (https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/configuring_and_managing_high_availability_clusters/index#assembly_configuring-gfs2-in-a-cluster-configuring-and-managing-high-availability-clusters)
+## Configure GFS2 with the pacemaker cluster
 ### On both nodes of the cluster, set the use_lvmlockd configuration option in the /etc/lvm/lvm.conf file to use_lvmlockd=1
 ### On node A
 
