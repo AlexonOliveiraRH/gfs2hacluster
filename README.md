@@ -21,7 +21,6 @@ This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 
 6. **[What are some examples of GFS & GFS2 workloads that should be avoided?](https://access.redhat.com/solutions/41223)**
 7. **[GFS2 Best Practices](https://access.redhat.com/articles/216503)**
 8. **[How can I view glock contention on a GFS2 filesystem in real-time in a RHEL 5, 6, 7, or 8 Resilient Storage cluster?](https://access.redhat.com/articles/666533)**
-9. 
 
 ---
 
