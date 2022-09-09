@@ -17,6 +17,7 @@ This is just a basic example on how to create a GFS2 cluster filesystem in RHEL 
  2. **[Configuring and managing high availability clusters](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/index)**
 3. **[Fencing in a Red Hat High Availability Cluster](https://access.redhat.com/solutions/15575)**
 4. **[How to configure fence agent 'fence_xvm' in RHEL cluster](https://access.redhat.com/solutions/917833)**
+5. **[What are some examples of GFS & GFS2 workloads that should be avoided?](https://access.redhat.com/solutions/41223)**
 
 ---
 
